@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Management Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <header class="flex justify-center mt-10">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- balance section -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title">Current Balance</div>
+                <div class="stat-value">89400</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- button section -->
+            <div>
+                <div class="grid grid-cols-3 gap-2 p-4">
+                    <button class="btn">Add Money</button>
+                    <button class="btn">Cash Out</button>
+                    <button class="btn">Transfer Money</button>
+                    <button class="btn">Get Bonus</button>
+                    <button class="btn">Pay Bill</button>
+                    <button class="btn">Transactions</button>
+                  </div>
+            </div>
+            <!-- button Sec End -->
+             <div class="divider"></div>
+             <!-- Add Money Form Section Start -->
+             <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-semibold">Amount To Add</span>
+                    </label>
+                    <input type="number" placeholder="Enter Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-semibold">Pin Number</span>
+                    </label>
+                    <input type="password" autocomplete="off" placeholder="Enter Your Pin" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary">Add Money</button>
+                  </div>
+                </form>
+              </div>
+             <!-- Add Money Form Section End -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="./JS/addMoney.js"></script>
+  </body>
+</html>
